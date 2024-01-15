@@ -7,7 +7,8 @@ export default defineConfig({
   server: {
     proxy: {
       "/api": {
-        target: "http://localhost:8000",
+        // target: "http://localhost:8000",
+        target: "https://mern-filtering-api.onrender.com",
         changeOrigin: true,
       },
     },
